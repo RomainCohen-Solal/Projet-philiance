@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/* Remove colors and underlines of links */
+a{
+  color: inherit;
+  text-decoration: none;
+}
+/* Header design */
+#header-content-wrapper{
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(#FFEFBA, #FFFFFF);
+  height: 145px;
+  font-family: 'New Rocker', cursive;
+}
+#header-content-wrapper a{
+  display: flex;
+  align-items : center;
+}
+#logo{
+  max-height: 80%;
+  transition: transform 0.2s;
+}
+#logo:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
+#search{
+  width: 260px;
+}
+.header-line{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+.header-navigation{
+  position: absolute;
+  bottom: 0;
+  }
+.header-navigation-main{
+  display: flex;
+  position: relative;
+  left: -50%;
+  font-size: x-large;
+  align-items: flex-end;
+}
+.header-navigation-main li{
+  transition: transform 0.2s;
+}
+.header-navigation-main li:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  color:#A1FFCE;
+}
+.header-navigation-main li{
+  list-style: none
+}
+.header-navigation-main-list:not(:last-child) { 
+  margin-right: 33%;  
+}
+.header-user{
+  display: flex;
+  align-self:flex-end;
+}
+.header-user-main li{
+  display: flex;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+.header-user-main li:not(:last-child){
+margin-bottom: 6px;
+}
+.header-user-main li:not(:last-child):hover { 
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  color:#A1FFCE;
+}
+.header-user-main li:not(:first-child) {
+margin-bottom: 24px;
+}
+#subscribe-button{
+  -webkit-appearance: none;
+  border: 6px solid rgba(245, 245, 245, 0.836);
+  border-radius: 50px;
+  padding: 1em 3em;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: padding-box;
+  color: #FFF;
+  background-image: linear-gradient(90deg, #8ce0f1, #79f391);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#subscribe-button:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.3);
+}
